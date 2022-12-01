@@ -1,0 +1,93 @@
+Question 1 : Answer The Following Questions 
+1-	What is an Event Loop
+
+Event loop is just a guardian who keeps a good communication with Call Stack and Callback Queue. 
+It checks if the call stack is free, then lets know the callback queue.
+ Then Callback queue passes the callback function to Call stack to be executed. 
+ When all the callback functions are executed, the call stack is out and global execution context is free
+
+
+2-	How do you add an element at the beginning of an array? 
+How do you add one at the end? 
+
+Unshift / push - add an element to the beginning/end of an array
+
+Question2 : What is The Output ? 
+  
+  
+#code
+
+// var x = 1; // 1
+// function outer() {
+//     var x = 2; //2
+//     function inner() {
+//         x++; //und
+//         var x = 3; //3
+//         console.log(x); //3
+//     }
+//     inner();
+// }
+// outer();
+
+
+#Output
+ 	
+3
+ 	
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Code
+
+// for (let i = 0; i < 5; i++) {
+// setTimeout(f=>{
+//     console.log(i);
+// },i*1000)    
+// }
+
+#Output
+0,1,2,3,4
+ 	
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Code
+
+// let arr =["x","y"];
+// arr.length=0;
+// arr.push("q");
+// console.log(arr);
+
+#Output
+
+['baz']
+ 	
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#code
+// function func(){
+// for (let key in arguments) {
+//     console.log(arguments[key]);
+// }
+// };
+// func(1,"hello",true);
+
+#OutPut
+
+1
+Hello
+true
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Code
+
+// let car ={
+//     carname:"BMW",
+//     carPrice:1000
+// }
+// console.log(car instanceof Object);
+// console.log(Object.entries(car));
+
+#Output
+
+true
+[ [ 'carName', 'BMW' ], [ 'carPrice', 1000000 ] ]
+
